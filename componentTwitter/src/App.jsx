@@ -1,4 +1,4 @@
-import CardTwitter from './src/CardTwitter'
+import CardTwitter from './components/CardTwitter'
 
 function App () {
   return (
