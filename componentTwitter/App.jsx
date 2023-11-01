@@ -8,6 +8,7 @@ function App () {
         <h3 className='font-bold text-2xl leading-none py-3 px-4 whitespace-nowrap'>A quién seguir</h3>
         <CardTwitter initialIsFollowing name='Andres Eduardo' user='elinmortal' />
         <CardTwitter initialIsFollowing={false} name='Elma Canudo' user='elmacanudo' />
+        <CardTwitter initialIsFollowing={false} name='Elma Canudo' user='elmacanudo' />
         <CardTwitter initialIsFollowing name='Nickdraz' user='nicoleishon' />
       </section>
     </main>
