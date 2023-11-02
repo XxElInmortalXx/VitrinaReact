@@ -1,4 +1,4 @@
-## Enunciado
+## App de buscador de peliculas v1.0.0
 
 Crea una aplicación para buscar películas
 
