@@ -1,7 +1,7 @@
 ![Logo](../../logovitrinareact.jpg)
 
 
-# Juego Tic Tac Toe v1.0.0
+# Juego Tic Tac Toe v1.0.1
 
 Este es el juego de Tic Tac Toe creado con react
 
@@ -52,7 +52,7 @@ Iniciar el proyecto como desarrollador
 
 ## Optimizaciones
 
-Me centro MVP (producto mínimo viable) El código está en su versión inicial, en futura actualizacón haré mejoras al código como optimización del código y componetización y separación de funcionalidades cono una carpeta separarda para los customHooks.
+Separacion de funcionalidades en carpetas separadas para codigo ma leíble
 
 ## Comentarios
 
