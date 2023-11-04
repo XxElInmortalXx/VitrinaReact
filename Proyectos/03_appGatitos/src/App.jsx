@@ -1,43 +1,21 @@
-import { useEffect, useState } from 'react'
-
-function useFetchFacts () {
-  const [fact, setFact] = useState('')
-  useEffect(() => {
-    fetch('https://catfact.ninja/fact')
-      .then(res => res.json())
-      .then(data => {
-        const { fact } = data
-        setFact(fact)
-      })
-  }, [])
-
-  return { fact }
-}
-
-function useFetchCat ({ fact }) {
-  const [imgUrl, setImgUrl] = useState('')
-  useEffect(() => {
-    if (!fact) return
-    const firstWord = fact?.split(' ', 1).join(' ')
-    fetch(`https://cataas.com/cat/says/${firstWord}`)
-      .then(res => {
-        const { url } = res
-        setImgUrl(url)
-      })
-  }, [fact])
-  return { imgUrl }
-}
+import { useCatImage } from './hooks/useCatImage'
+import { useCatFact } from './hooks/useCatFact'
 
 function App () {
-  const { fact } = useFetchFacts()
-  const { imgUrl } = useFetchCat({ fact })
+  const { fact, refreshFact } = useCatFact()
+  const { imageURL } = useCatImage({ fact })
+
+  const handleClick = () => {
+    refreshFact()
+  }
 
   return (
     <main>
-      <h1 className='text-4xl text-center my-4 font-bold'>App de gatitos</h1>
-      <section className='grid grid-cols-1 gap-5 md:grid-cols-2 place-items-center w-[90%] mx-auto container'>
+      <h1 className='text-center py-4 font-bold text-4xl'>App Gatitos</h1>
+      <button className='block mx-auto bg-black mb-4 text-white py-2 px-4 rounded-xl font-medium border-2 border-black hover:bg-white hover:text-black' onClick={handleClick}>Generar nuevo gatito</button>
+      <section className='grid md:grid-cols-2 w-[90%] container mx-auto gap-5 place-items-center'>
         {fact && <p>{fact}</p>}
-        {imgUrl && <img src={imgUrl} alt={`imagen de gatito que empieza con la palabra ${fact}`} />}
+        {imageURL && <img src={imageURL} alt='imagen potente' />}
       </section>
     </main>
   )

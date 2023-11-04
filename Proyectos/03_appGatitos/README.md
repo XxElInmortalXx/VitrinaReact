@@ -1,7 +1,7 @@
 ![Logo](../../logovitrinareact.jpg)
 
 
-# App Gatitos v1.0.0
+# App Gatitos v1.0.1
 
 Esta app genera una frase random y a partir de la primera palabra, genera una imagen de un gatito :3
 
@@ -17,9 +17,8 @@ Con este proyecto y su necesidad de consumir dos APIs que se relacionan entre s�
 
 ## Características
 
-- Uso de useEffect
-- cusomHooks
 - Manejo de fetch de datos con useEffect
+- cusomHooks
 - usar 2 APIs que se relacionan entre sí
 
 
@@ -61,7 +60,7 @@ Iniciar el proyecto como desarrollador
 
 ## Optimizaciones
 
-Me centro MVP (producto mínimo viable) El código está en su versión inicial, en futura actualizacón haré mejoras al código como optimización del código y componetización y separación de funcionalidades cono una carpeta separarda para los customHooks.
+mejoras al código como optimización del código y componetización y separación de funcionalidades con una carpeta separada para los customHooks.
 
 ## Comentarios
 
@@ -73,4 +72,4 @@ Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responder�
 
 ## Apéndice
 
-Este readme se actualizó el 03/11/23
+Este readme se actualizó el 04/11/23
