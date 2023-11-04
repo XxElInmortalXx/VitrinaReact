@@ -27,7 +27,7 @@ function App () {
       >
         <div
           ref={item}
-          className='fixed top-[28%] left-[50%] -translate-x-1/2 w-28 h-10 rounded-xl whitespace-nowrap bg-black text-white grid place-items-center pointer-events-none transition-all duration-300 ease-linear'
+          className='fixed top-[28%] left-[50%] -translate-x-1/2 w-28 h-10 rounded-xl whitespace-nowrap bg-black text-white grid place-items-center pointer-events-none'
         >
           I follow you
         </div>
