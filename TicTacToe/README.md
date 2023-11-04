@@ -1,1 +1,0 @@
-# tic tac toe v1.0.0
