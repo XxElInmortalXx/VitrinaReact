@@ -32,13 +32,13 @@ Con este proyecto y su necesidad de consumir dos APIs que se relacionan entre s�
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/03_appGatitos
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 03_appGatitos
 ```
 
 Instalar las dependencias
@@ -65,7 +65,7 @@ Me centro MVP (producto mínimo viable) El código está en su versión inicial,
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos
 
 ## Autor
 

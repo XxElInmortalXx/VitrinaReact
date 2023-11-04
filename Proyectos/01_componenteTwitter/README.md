@@ -32,13 +32,13 @@ Este proyecto me di la oportunidad de aprender el uso componentes reutilizables 
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/01_componenteTwitter
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 01_componenteTwitter
 ```
 
 Instalar las dependencias
@@ -59,7 +59,7 @@ Me centro MVP (producto mínimo viable) El código está en su versión inicial,
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos
 
 ## Autor
 

@@ -2,7 +2,7 @@
 
 # Vitrina React
 
-Aqupi publico mis proyectos y/o prácticas que tengo con react
+Aquí publico mis proyectos y/o prácticas que tengo con react
 
 ## Lecciones Aprendidas
 
@@ -13,7 +13,7 @@ Aqupi publico mis proyectos y/o prácticas que tengo con react
 - Custom Hooks
 - Manejo de formularios
 - Consumir una API
-- Código Límpio
+- Código Limpio
 
 ## Pila de Tecnologías Usadas
 
@@ -25,7 +25,7 @@ Me centro MVP (producto mínimo viable) El código está en sus versiónes inici
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en 30 minutos
 
 ## Autor
 
@@ -33,4 +33,4 @@ Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
 
 ## Apéndice
 
-Este readme se actualizó el 03/11/23
+Este readme se actualizó el 04/11/23

@@ -31,13 +31,13 @@ Con este proyecto me di la oportunidad de practicar más el consummir APIs con u
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/05_buscadorPeliculas
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 05_buscadorPeliculas
 ```
 
 Instalar las dependencias
@@ -53,7 +53,7 @@ Iniciar el proyecto como desarrollador
 ```
 
 ## APIs:
-```
+``` 
 - https://www.omdbapi.com/
 // Consigue la API Key en la propia página web registrando tu email.
 ```
@@ -64,7 +64,7 @@ Me centro MVP (producto mínimo viable) El código está en su versión inicial,
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos
 
 ## Autor
 

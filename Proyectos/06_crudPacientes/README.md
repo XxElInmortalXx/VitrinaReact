@@ -27,13 +27,13 @@ Con este proyecto me di la oportunidad de practicar el cómo usar los arrays y o
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/06_crudPacientes
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 06_crudPacientes
 ```
 
 Instalar las dependencias
@@ -54,7 +54,7 @@ Me centro MVP (producto mínimo viable) El código está en su versión inicial,
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos
 
 ## Autor
 

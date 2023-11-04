@@ -29,13 +29,13 @@ El juego de tic tac toe, con este juego mejoré mi comprensión hacia el hoock u
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/04_juegoTicTacToe
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 04_juegoTicTacToe
 ```
 
 Instalar las dependencias
@@ -56,7 +56,7 @@ Me centro MVP (producto mínimo viable) El código está en su versión inicial,
 
 ## Comentarios
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com
+Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos
 
 ## Autor
 
