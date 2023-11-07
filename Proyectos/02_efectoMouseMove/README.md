@@ -17,7 +17,7 @@ Gracias a este proyecto, tuve la oportunidad de comprender el funcionamiento del
 
 ## Características
 
-- Uso de useState
+- Uso de useEffect
 - Manejo de efectos con css usando tailwindcss
 - Código limpio
 
