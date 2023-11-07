@@ -27,6 +27,7 @@ function Cart () {
             </div>
             <button className='py-2 px-4 bg-gray-50 border-2 rounded-xl font-medium mt-4 shadow-lg w-full'>Delete to cart</button>
           </article>
+          <button className='py-2 px-4 bg-black text-white border-2 rounded-xl font-medium mt-4 shadow-lg w-full'>Clear to cart</button>
         </section>
       )}
     </>
