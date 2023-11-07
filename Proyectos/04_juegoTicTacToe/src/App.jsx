@@ -54,7 +54,7 @@ function App () {
         {
           board.map((_, index) => (
             <div
-              className='bg-white w-full h-full grid place-items-center font-bold text-2xl'
+              className='bg-white w-full h-full grid place-items-center font-bold text-7xl cursor-pointer'
               key={index}
               onClick={() => handleClick(index)}
             >
