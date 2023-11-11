@@ -1,0 +1,41 @@
+{
+    "location": {
+        "name": "Concord Regional Airport",
+        "region": "Concord",
+        "country": "United States of America",
+        "lat": 35.39,
+        "lon": -80.71,
+        "tz_id": "America/New_York",
+        "localtime_epoch": 1699659407,
+        "localtime": "2023-11-10 18:36"
+    },
+    "current": {
+        "last_updated_epoch": 1699659000,
+        "last_updated": "2023-11-10 18:30",
+        "temp_c": 13,
+        "temp_f": 55.4,
+        "is_day": 0,
+        "condition": {
+            "text": "Overcast",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+            "code": 1009
+        },
+        "wind_mph": 13.6,
+        "wind_kph": 22,
+        "wind_degree": 40,
+        "wind_dir": "NE",
+        "pressure_mb": 1023,
+        "pressure_in": 30.2,
+        "precip_mm": 0,
+        "precip_in": 0,
+        "humidity": 54,
+        "cloud": 100,
+        "feelslike_c": 11.2,
+        "feelslike_f": 52.2,
+        "vis_km": 11,
+        "vis_miles": 6,
+        "uv": 1,
+        "gust_mph": 17.2,
+        "gust_kph": 27.6
+    }
+}
