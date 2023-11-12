@@ -1,24 +1,24 @@
 import { useState } from 'react'
-
-function useFetchMovies () {
-  const [responseMovies, setResponseMovies] = useState({})
-
-  const getMovies = (query) => {
-    fetch(`https://www.omdbapi.com/?apikey=286ff677&s=${query}`)
-      .then(res => res.json())
-      .then(data => setResponseMovies(data))
-  }
-
-  return { movies: responseMovies, getMovies }
-}
+import { Movies } from './components/Movies'
+import { useMovies } from './hooks/useMovies'
 
 function App () {
+  const [sort, setSort] = useState(false)
   const [query, setQuery] = useState('')
-  const { movies, getMovies } = useFetchMovies()
+  const { movies, getMovies } = useMovies({ query, sort })
+
+  const handleChangeQuery = (e) => {
+    const value = e.target.value
+    setQuery(value)
+  }
+
+  const handleChangeSort = () => {
+    setSort(!sort)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    getMovies(query)
+    getMovies({ query })
   }
 
   return (
@@ -26,34 +26,16 @@ function App () {
       <h1 className='text-center font-bold text-2xl my-4'>Buscador de peliculas</h1>
       <form
         onSubmit={handleSubmit}
-        className='w-80 mx-auto flex justify-center'
+        className='w-80 mx-auto flex justify-center items-center'
       >
         <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={handleChangeQuery}
           className='border border-black p-2 border-r-0 outline-none'
         />
         <button className='border border-black p-2'>Search</button>
+        <input className='h-full w-full block p-2' type='checkbox' checked={sort} onChange={handleChangeSort} />
       </form>
-      <section className='my-8'>
-        {
-          'Search' in movies
-            ? (
-              <ul className='w-[90%] mx-auto container grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] place-items-start gap-3'>
-                {
-                movies.Search.map((movie) => (
-                  <li className='text-center border-2 p-4 border-black rounded-xl h-full' key={movie.imdbID}>
-                    <h3 className='font-semibold text-lg'>{movie.Title}</h3>
-                    <p>{movie.Year}</p>
-                    <img src={movie.Poster} alt={movie.Title} />
-                  </li>
-                ))
-                }
-              </ul>
-              )
-            : <p className='text-center'>{movies.Error}</p>
-        }
-      </section>
+      <Movies movies={movies} />
     </main>
   )
 }

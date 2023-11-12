@@ -1,7 +1,7 @@
 ![Logo](../../logovitrinareact.jpg)
 
 
-# Buscador de Peliculas v1.0.0
+# Buscador de Peliculas v1.2.0
 
 Buscador de peliculas consumiendo una API
 
@@ -18,6 +18,7 @@ Con este proyecto me di la oportunidad de practicar más el consummir APIs con u
 ## Características
 
 - Uso de useEffect
+- Uso de useMemo, useCallback
 - Uso de custom hooks
 - Uso de useEffect
 
@@ -60,7 +61,7 @@ Iniciar el proyecto como desarrollador
 
 ## Optimizaciones
 
-Me centro MVP (producto mínimo viable) El código está en su versión inicial, en futura actualizacón haré mejoras al código como optimización del código y componetización y separación de funcionalidades cono una carpeta separarda para los customHooks.
+hice mejoras del codigo poniendo funcionalidades en carpetas separadas y optimizando las busquedas gracias a useMemo y useCallback
 
 ## Comentarios
 
