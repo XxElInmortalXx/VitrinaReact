@@ -11,6 +11,8 @@ Aquí publico mis proyectos y/o prácticas que tengo con react
 - useEffect
 - useRef
 - Custom Hooks
+- useMemo
+- useCallback
 - Manejo de formularios
 - Consumir una API
 - Código Limpio
