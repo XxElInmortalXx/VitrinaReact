@@ -58,6 +58,10 @@ No se requieren variables de entorno para este proyecto.
 
 Se implementaron custom hooks y hooks de React de manera eficiente para evitar la carga excesiva de lógica en cada componente, garantizando un rendimiento óptimo.
 
+## Mejoras futuras
+
+Implementar useReducer para optimizar el código y agregar la capacidad de ajustar la cantidad de productos. Además, incluir la actualización del botón al agregar al carrito para indicar que el producto ya está en la cesta.
+
 
 ## FAQ
 
