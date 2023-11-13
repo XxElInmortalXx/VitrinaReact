@@ -28,25 +28,25 @@ Un eficiente carrito de compras que te permite filtrar productos por precio o po
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/XxElInmortalXx/VitrinaReact/tree/main/Proyectos/08_carrito
 ```
 
-Go to the project directory
+Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd 08_carrito
 ```
 
-Install dependencies
+Instalar las dependencias
 
 ```bash
   npm install
 ```
 
-Start the server
+Iniciar el proyecto como desarrollador
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 

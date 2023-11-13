@@ -13,6 +13,8 @@ Aquí publico mis proyectos y/o prácticas que tengo con react
 - Custom Hooks
 - useMemo
 - useCallback
+- useContext
+- useId
 - Manejo de formularios
 - Consumir una API
 - Código Limpio
