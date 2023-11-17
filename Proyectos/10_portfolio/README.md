@@ -1,6 +1,6 @@
 ![Logo](../../logovitrinareact.jpg)
 
-# Lista de Usuarios v1.0.0
+# Portfolio v1.0.0
 
 Es mi portafolio, aunque está solo una sección, lo iré actualizando una vez tenga el diseño completado, lo haré con react-router-dom
 
