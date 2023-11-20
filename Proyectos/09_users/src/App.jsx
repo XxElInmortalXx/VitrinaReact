@@ -1,26 +1,20 @@
 import { useMemo, useState } from 'react'
 import { UsersList } from './components/UsersList'
 import { useUsers } from './hooks/useUsers'
-
-const SORTBY = {
-  NONE: null,
-  NAME: 'name',
-  LAST: 'last',
-  COUNTRY: 'country'
-}
+import { SortBy } from './utils'
 
 export function App () {
   const [switchBackground, setSwitchBackground] = useState(true)
-  const [sorting, setSorting] = useState(SORTBY.NONE)
+  const [sorting, setSorting] = useState(SortBy.NONE)
   const [filterCountry, setFilterCountry] = useState('')
-  const { initialUsers, users, setUsers } = useUsers()
+  const { initialUsers, users, setUsers, error, loading } = useUsers()
 
   const handleSwitchBackground = () => {
     setSwitchBackground(prevState => !prevState)
   }
 
   const handleSwitchSortByCountry = () => {
-    const newSortingValue = sorting === SORTBY.NONE ? SORTBY.COUNTRY : SORTBY.NONE
+    const newSortingValue = sorting === SortBy.NONE ? SortBy.COUNTRY : SortBy.NONE
     setSorting(newSortingValue)
   }
 
@@ -38,7 +32,12 @@ export function App () {
     setFilterCountry(value)
   }
 
-  const filteredCountry = useMemo(() => {
+  const handleChangeSort = (sort) => {
+    const newSorting = sorting === SortBy.NONE ? sort : SortBy.NONE
+    setSorting(newSorting)
+  }
+
+  const filteredUsers = useMemo(() => {
     return filterCountry.length > 0
       ? users.filter(user => {
         return user.location.country.toLowerCase().includes(filterCountry.toLowerCase())
@@ -46,13 +45,20 @@ export function App () {
       : users
   }, [users, filterCountry])
 
-  const sortedCountry = useMemo(() => {
-    return sorting
-      ? filteredCountry.toSorted((a, b) => {
-        return a.location.country.localeCompare(b.location.counrty)
-      })
-      : filteredCountry
-  }, [filteredCountry, sorting])
+  const sortedUsers = useMemo(() => {
+    if (sorting === SortBy.NONE) return filteredUsers
+
+    const compareProperties = {
+      [SortBy.COUNTRY]: user => user.location.country,
+      [SortBy.NAME]: user => user.name.first,
+      [SortBy.LAST]: user => user.name.last
+    }
+
+    return filteredUsers.toSorted((a, b) => {
+      const extractProperty = compareProperties[sorting]
+      return extractProperty(a).localeCompare(extractProperty(b))
+    })
+  }, [filteredUsers, sorting])
 
   return (
     <main>
@@ -86,7 +92,12 @@ export function App () {
         </section>
       </header>
       <section className='w-[90%] mx-auto container'>
-        <UsersList handleDeleteUser={handleDeleteUser} switchBackground={switchBackground} users={sortedCountry} />
+        {loading && <p>Cargando...</p>}
+        {!loading && error && <p>{users.message}</p>}
+        {!loading && !error && Object.keys(users).length > 0 && (
+          <UsersList handleChangeSort={handleChangeSort} handleDeleteUser={handleDeleteUser} switchBackground={switchBackground} users={sortedUsers} />
+        )}
+        {!loading && !error && Object.keys(users).length === 0 && <p>No hay usuarios</p>}
       </section>
     </main>
   )

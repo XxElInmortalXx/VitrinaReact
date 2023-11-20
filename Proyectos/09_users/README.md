@@ -58,10 +58,6 @@ No se requieren variables de entorno para este proyecto.
 
 se usa de manera mínima useMemo para no volver a calcular algunos estados
 
-## Mejoras futuras
-
-refactorizar el código para poder dar funciones a otros lados de la App para mejor performance, mejorar el CSS haciendolo con un mejor diseño y adaptado a móviles
-
 ## Comentarios
 
 Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en aproximados 30 minutos

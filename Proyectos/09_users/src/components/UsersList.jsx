@@ -1,18 +1,19 @@
-export function UsersList ({ switchBackground, users, handleDeleteUser, handleSorting }) {
+import { SortBy } from '../utils'
+
+export function UsersList ({ switchBackground, users, handleDeleteUser, handleChangeSort }) {
   return (
     <table className='text-black w-full text-center border-2 border-black rounded-xl p-5 shadow-2xl font-medium '>
       <thead>
         <tr className='bg-black text-white'>
           <th className='py-5'>Photo</th>
-          <th className='py-5 cursor-pointer'>Name</th>
-          <th className='py-5 cursor-pointer'>LastName</th>
-          <th className='py-5 cursor-pointer'>Country</th>
+          <th onClick={() => handleChangeSort(SortBy.NAME)} className='py-5 cursor-pointer'>Name</th>
+          <th onClick={() => handleChangeSort(SortBy.LAST)} className='py-5 cursor-pointer'>LastName</th>
+          <th onClick={() => handleChangeSort(SortBy.COUNTRY)} className='py-5 cursor-pointer'>Country</th>
           <th className='py-5'>Actions</th>
         </tr>
       </thead>
       <tbody>
         {
-          Object.keys(users).length > 0 &&
           users.map((user, index) => {
             const backgroundColor = index % 2 ? 'bg-gray-300' : 'bg-gray-400'
             const styleTableBody = switchBackground ? backgroundColor : 'bg-transparent'
