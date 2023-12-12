@@ -2,11 +2,11 @@
 
 # Vitrina React
 
-Aquí publico mis proyectos y/o prácticas que tengo con react
+Here I publish my projects and/or practices that I have with react
 
-## Lecciones Aprendidas
+## Learned lessons
 
-- Componentes
+- Components
 - useState
 - useEffect
 - useRef
@@ -15,26 +15,26 @@ Aquí publico mis proyectos y/o prácticas que tengo con react
 - useCallback
 - useContext
 - useId
-- Manejo de formularios
-- Consumir una API
-- Código Limpio
+- Form management
+- Consume an API
+- Clean Code
 
-## Pila de Tecnologías Usadas
+## Used Technologies Stack
 
 **Client:** React, TailwindCSS, vite (Vanilla), APIs
 
-## Optimizaciones
+## Optimizations
 
-Me centro MVP (producto mínimo viable) El código está en sus versiónes iniciales, en futuras actualizacónes haré mejoras al código como optimizaciónes de los códigos y componetización y separación de funcionalidades cono una carpeta separardas.
+I focus on MVP (minimum viable product). The code is in its initial versions, in future updates I will make improvements to the code such as code optimizations and componentization and separation of functionalities as a separate folder.
 
-## Comentarios
+## Comments
 
-Si tienes algún comentario, comunicate conmigo alpiryk@gmail.com, te responderé en 30 minutos
+If you have any comments, please contact me alpiryk@gmail.com, I will respond within 30 minutes
 
-## Autor
+## Author
 
 - [Andres Eduardo Rosas Alpiri](https://github.com/XxElInmortalXx)
 
-## Apéndice
+## Appendix
 
-Este readme se actualizó el 04/11/23
+This readme was updated on 11/04/23
